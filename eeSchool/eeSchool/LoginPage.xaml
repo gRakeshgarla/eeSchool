@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="eeSchool.LoginPage"
+             Padding="30">
+    <StackLayout VerticalOptions="Center" Spacing="10">
+        <Entry x:Name="username" Placeholder="UserName" IsSpellCheckEnabled="false" />
+        <Entry x:Name="password" Placeholder="Password" IsSpellCheckEnabled="false" IsPassword="True" />
+        <Picker x:Name="school" Title="Select a school" />
+        <controls:CheckBox x:Name="RememberMe" DefaultText="Remember Me" Checked="False" />
+        <Button Text="LOG IN" TextColor="Black" Clicked="Button_Clicked" BackgroundColor="Aqua" />
+
+    </StackLayout>
+</ContentPage>
